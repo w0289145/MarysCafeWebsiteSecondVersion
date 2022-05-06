@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 
 // isotope js
-window.on('load', function () {
+$(window).on('load', function () {
     $('.filters_menu li').click(function () {
         $('.filters_menu li').removeClass('active');
         $(this).addClass('active');
@@ -35,7 +35,7 @@ window.on('load', function () {
 });
 
 // nice select
-document.ready(function() {
+$(document).ready(function() {
     $('select').niceSelect();
   });
 
@@ -48,9 +48,8 @@ function myMap() {
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
 
-
 // client section owl carousel
-".client_owl-carousel".owlCarousel({
+$(".client_owl-carousel").owlCarousel({
     loop: true,
     margin: 0,
     dots: false,
