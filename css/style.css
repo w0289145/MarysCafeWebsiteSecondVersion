@@ -154,7 +154,7 @@ a:focus {
 .navbar-brand span {
   font-weight: bold;
   font-size: 32px;
-  color: #ffffff;
+  color: rgba(34,40,49, 0.9);
 }
 
 .custom_nav-container {
@@ -167,7 +167,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
-  color: #ffffff;
+  color: rgba(34,40,49, 0.9);
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
