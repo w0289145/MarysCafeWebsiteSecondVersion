@@ -7,6 +7,11 @@ function getYear() {
 
 getYear();
 
+window.addEventListener('DOMContentLoaded', event => {
+    const listHoursArray = document.body.querySelectorAll('.list-hours li');
+    listHoursArray[new Date().getDay()].classList.add(('today'));
+})
+
 
 // isotope js
 $(window).on('load', function () {
@@ -37,8 +42,8 @@ $(document).ready(function() {
 /** google_map js **/
 function myMap() {
     var mapProp = {
-        center: new google.maps.LatLng(40.712775, -74.005973),
-        zoom: 18,
+        center: new google.maps.LatLng(44.640280, -63.586300),
+        zoom: 19,
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 }
@@ -68,3 +73,4 @@ $(".client_owl-carousel").owlCarousel({
         }
     }
 });
+
