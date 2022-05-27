@@ -1107,7 +1107,72 @@ a:focus {
 
 }
 
+@media (max-width: 768px){
+  /*Unless you changed the collapse point, this is the default*/
+  #responsivelogo {
+    height: 90px;
+  }
+}
 
+/*\
+ * Restore Bootstrap 3 "hidden" utility classes.
+\*/
+
+/* Breakpoint XS */
+@media (max-width: 575px)
+{
+  .hidden-xs-down, .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up,
+  .hidden-unless-xs
+  {
+    display: none !important;
+  }
+
+}
+
+/* Breakpoint SM */
+@media (min-width: 576px) and (max-width: 767px)
+{
+  .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up,
+  .hidden-unless-sm
+  {
+    display: none !important;
+  }
+}
+
+/* Breakpoint MD */
+@media (min-width: 768px) and (max-width: 991px)
+{
+  .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up,
+  .hidden-unless-md
+  {
+    display: none !important;
+  }
+}
+
+/* Breakpoint LG */
+@media (min-width: 992px) and (max-width: 1199px)
+{
+  .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up,
+  .hidden-unless-lg
+  {
+    display: none !important;
+  }
+}
+
+/* Breakpoint XL */
+@media (min-width: 1200px)
+{
+  .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up,
+  .hidden-unless-xl
+  {
+    display: none !important;
+  }
+}
 
 
 
