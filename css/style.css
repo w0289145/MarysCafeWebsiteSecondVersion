@@ -1174,5 +1174,10 @@ a:focus {
   }
 }
 
+.logo {
+  padding-top: -20px;
+  float: top;
+}
+
 
 
