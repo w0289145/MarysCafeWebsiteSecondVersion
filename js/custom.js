@@ -5,6 +5,8 @@ function getYear() {
     document.querySelector("#displayYear").innerHTML = currentYear;
 }
 
+
+
 getYear();
 
 window.addEventListener('DOMContentLoaded', event => {
@@ -12,6 +14,9 @@ window.addEventListener('DOMContentLoaded', event => {
     listHoursArray[new Date().getDay()].classList.add(('today'));
 })
 
+function goToBrunch() {
+    ('[data-option-value=".brunch"]').trigger('click');
+}
 
 // isotope js
 $(window).on('load', function () {
@@ -47,6 +52,7 @@ function myMap() {
     };
     var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
+
 }
 
 
@@ -77,6 +83,10 @@ $(".client_owl-carousel").owlCarousel({
 });
 
 myMap();
+
+
+
+
 
 
 

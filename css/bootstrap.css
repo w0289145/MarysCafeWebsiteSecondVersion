@@ -477,6 +477,7 @@ mark,
 }
 
 .img-fluid {
+  display: block;
   max-width: 100%;
   height: auto;
 }
@@ -7799,6 +7800,7 @@ button.bg-dark:focus {
     position: sticky;
     top: 0;
     z-index: 1020;
+    box-shadow: 0px 0px 14px #777;
   }
 }
 
